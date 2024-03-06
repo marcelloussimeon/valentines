@@ -1,0 +1,1595 @@
+
+/*Styles header section */
+
+
+body{
+
+  background: linear-gradient(to right, #670100,lightpink);
+  overflow-x:hidden;
+}
+
+header {
+  overflow: hidden;
+  background: linear-gradient(to right, #670100,maroon);
+
+}
+
+.valentinesh{
+
+  color:#FFFDFA;
+  font-size:5em;
+  font-family: 'Lucida Handwriting';
+  font-weight:900;
+}
+header a, header label {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+
+header label {
+  float: right;
+  padding: 18px 20px;
+  cursor: pointer;
+}
+
+header label:after {
+  content: "\2261";
+  font-size: 1.8em;
+}
+
+/*Logo is styled with green color font family of fugaz font size and text shadow*/
+.logo, .Logoinfooter {
+  color: white;
+  font-family: 'Lucida Handwriting';
+  float: left;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-shadow: 2px 2px 2px rgba(black,0.6);
+}
+  
+/*This code is responsible for the glow of the logo it starts here*/
+
+.logo {
+  
+    animation: logo 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes logo {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+/*This code is responsible for the glow of the logo it ends here*/
+
+
+/*
+Transforms logo to uppercase on mouse over*/
+  .logo:hover{
+    text-transform: uppercase;
+    color: white;
+    transform: scale(1.4)
+  }
+  /*End of Transforms logo to uppercase on mouse over*/
+
+/*Causes menu to float right and adapt on several browers*/
+
+nav {
+  float: right;
+  max-height: 0;
+  width: 100%;
+    -webkit-transition: max-height 0.3s; 
+     -moz-transition: max-height 0.3s;
+       -o-transition: max-height 0.3s;
+          transition: max-height 0.3s;
+          font-family: 'Times New Roman', cursive;
+       
+}
+
+
+
+/* End of Causes menu to float right and adapt on several browers*/
+
+/*Responsible for setting the margins of the hamburger menu  padding aligns center and color of link on hover*/
+nav ul {
+  margin: 0;
+  padding: 0;
+   padding-bottom: 10px;
+   
+}
+  
+nav li {
+  display: block;
+  text-align: center;
+
+}
+  
+
+
+nav a:hover
+{
+
+ text-transform: uppercase;
+}
+
+
+#nav { display: none; }
+
+#nav:checked ~ nav {
+  max-height: 400px; /* This can be anything bigger than your nav height. The transition duration works with this */
+}
+
+@media only screen and (min-width: 700px) {
+  
+  header label { display: none; }
+  
+  nav {
+    width: auto;
+    max-height: none;
+  }
+  
+  nav ul {
+    padding: 0;
+    padding-right: 10px;
+  }
+  
+  nav li {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  header nav a {
+    display: inline-block;
+    padding: 20px 10px;
+    width: auto;
+  }
+  
+}
+
+/*End of css styles for header*/
+
+/*Responsible for setting the margins of the hamburger menu  padding aligns center and color of link on hover*/
+
+
+*Styles all footer sections appropriately with fonts background colors margins paddings letter spacing, line height and other relevant styling */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.pg-footer {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+.footer {
+    background: linear-gradient(to right, #670100, orange);
+    color: #fff;
+  }
+
+
+.footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 450px;
+    position: relative;
+}
+
+.footer-content-column {
+    box-sizing: border-box;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    color: #fff;
+}
+
+.footer-content-column ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-logo-link {
+    display: inline-block;
+}
+.footer-menu {
+    margin-top: 30px;
+}
+
+.footer-menu-name {
+    color: #fffff2;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.footer-menu-list {
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding-left: 0;
+}
+.footer-menu-list li {
+    margin-top: 5px;
+}
+
+.footer-call-to-action-description {
+    color: #fffff2;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.footer-call-to-action-button:hover {
+    background-color: #fffff2;
+    color: red;
+}
+.button:last-of-type {
+    margin-right: 0;
+}
+.footer-call-to-action-button {
+    background-color: white;
+    border-radius: 21px;
+    color: red;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 18px;
+    padding: 12px 30px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .2s;
+    cursor: pointer;
+    position: relative;
+}
+.footer-call-to-action {
+    margin-top: 30px;
+}
+.footer-call-to-action-title {
+    color: #fffff2;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.footer-call-to-action-link-wrapper {
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.footer-call-to-action-link-wrapper a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.footer-copyright {
+   /* background-color: white;*/
+   background: linear-gradient(to right, #670100,maroon,orange);
+    padding: 15px 30px;
+  text-align: center;
+}
+
+.footer-copyright-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.footer-copyright-text {
+    color: red;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.footer-copyright-link {
+    color: white;
+    text-decoration: none;
+    font-weight:bolder;
+}
+
+
+/* Media Query For different screens */
+@media (min-width:320px) and (max-width:479px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  .footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 1050px;
+    position: relative;
+  }
+}
+@media (min-width:480px) and (max-width:599px)  { /* smartphones, Android phones, landscape iPhone */
+  .footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 1050px;
+    position: relative;
+  }
+}
+@media (min-width:600px) and (max-width: 800px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 1050px;
+    position: relative;
+  }
+}
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */
+
+}
+
+
+
+
+@media (min-width: 760px) {
+  .footer-content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1230px;
+      padding: 40px 15px 450px;
+      position: relative;
+  }
+
+  .footer-wave-svg {
+      height: 50px;
+  }
+
+  .footer-content-column {
+      width: 24.99%;
+  }
+}
+
+/*h1 {
+
+  color: white;
+  font-family: 'Fugaz One', cursive;
+  font-weight: bold;
+  font-size: 1.5em;
+ text-shadow: 2px 2px 2px rgba(black,0.6);
+}*/
+@media (min-width: 568px) {
+  
+}
+/*End of styles for footer section*/
+
+
+/*Column3 CSS Styles begins here*/
+
+
+/*Set the styling for the box, background, font and oother attrbutes*/
+*{box-sizing:border-box}
+
+/*html{background:skyblue;}*/
+/*{background: #00b4de; color: #fbfbfb; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; text-align: center; padding: 2em 0;}
+*/
+main{
+  width:94.75%;
+margin: 0 auto;
+ overflow: hidden;
+}
+
+/*General column settings in the about page*/
+.col{
+    width: 33.333%;
+    height:500px;
+    float: left;
+    text-align: center;
+    padding:1rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    font-weight:bolder;
+
+ 
+
+}
+
+/*Sets the column banckground to white for all three columns in the about page*/
+
+.col1/*{ background : linear-gradient (white);} */
+ /* background: linear-gradient(pink,white);*/
+
+.col2/*{ background: white;}*/
+ /* background: linear-gradient(pink,white);*/
+
+.col3/*{ background: white;}*/ 
+
+  /*background: linear-gradient(pink,white);*/
+
+
+/*Centers the headings for about us  company history mission and vision*/
+
+.col1 h2{
+
+    text-align: center;
+
+}
+
+.col2 h2{
+
+    text-align: center;
+}
+
+.col3 h2{
+
+    text-align: center;
+
+  }
+
+  .col1 p{
+
+    text-align: justify;
+
+}
+
+.col2 p{
+
+  text-align: justify;
+
+}
+
+.col3 p{
+
+  text-align: justify;
+
+}
+
+/*footer{
+    clear:both;
+}
+*/
+@media only screen and (max-width:768px){
+    
+    .col1, .col2{
+        width:50%;
+    }
+    .col3{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .col{
+       float: none;
+        width:100%;
+    }
+}
+
+/*End Column3 CSS Styles*/
+
+/*Beginning of Styles image on home page making it responsive*/
+
+.imgcenter 
+{
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:auto;
+  width:100;
+}
+
+/*End of Styles image on home page making it responsive*/
+
+/*Styles image credit on home page below rose.png*/
+
+
+
+/*End of styles image credit on home page*/
+
+/*Sets general form settings like borders, height color width*/
+
+
+/*Css styles for order, contact form and form heading*/
+
+form {
+    
+    margin-left:auto;
+    margin-right:auto;
+    width: 500px;
+    height: auto;
+    padding:20px;
+    border: 8px solid rgba(0,0,0,.2);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    
+    background: linear-gradient(#e66465, #9198e5);
+    -moz-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    overflow: hidden; 
+   
+}
+
+
+
+/*form backgraound image for contact form starts here*/
+.bgimage {
+  /* The image used */
+  background-image: url("../img/background1.jpg");
+
+  /* Control the height of the image */
+ 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  
+
+
+
+  position: relative;
+}
+
+/*form backgraound image for contact form starts here*/
+.bgimage2 {
+  /* The image used */
+  background-image: url("../img/background2.png");
+
+  /* Control the height of the image */
+ 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-size: cover;
+background-repeat: no-repeat;
+
+  position: relative;
+}
+
+
+
+/*form background image ends here*/
+
+form label{
+  font-weight:bold;
+}
+/*Sets up textarea where additional requests can be made*/
+
+textarea{
+   width: 450px;
+    height: 140px;
+    border: 1px solid rgba(255,255,255,.6);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    display:block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:14px;
+    color:black;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:12px;
+    margin-bottom:20px;
+    overflow:hidden;
+    font-weight:bolder;
+}
+
+
+/*General settings for all buttons of class input and select*/
+input, select {
+   /* background: rgba(105,105,105,105)*/
+    width: 379px;
+    height: auto;
+    border: 3px solid rgba(255,255,255,.4);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    display:block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:14px;
+    color:black;
+    font-weight:bolder;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:20px;
+
+    
+}
+
+/*Styles background  for submit name email message telephone and options button*/
+
+input[type=submit] {
+    cursor:pointer;
+
+}
+
+input.name  {
+   /* background: rgba(105,105,105,105) url(http://luismruiz.com/img/gemicon_name.png) no-repeat scroll 16px 16px; */
+    padding-left:45px;
+
+
+}
+
+input.email  {
+    /*background: rgba(105,105,105,105) url(http://luismruiz.com/img/gemicon_email.png) no-repeat scroll 16px 20px;*/
+    padding-left:45px;
+}
+
+
+input.message {
+    /*background: rgba(105,105,105,105) url(http://luismruiz.com/img/gemicon_message.png) no-repeat scroll 16px 16px;*/
+    padding-left:45px;
+}
+
+
+input.tel {
+      /*background: rgba(105,105,105,105) url(http://luismruiz.com/img/gemicon_message.png) no-repeat scroll 16px 16px;*/
+      padding-left:45px;
+}
+
+
+
+textarea {
+      /*background: rgba(105,105,105,105) url(http://luismruiz.com/img/gemicon_message.png) no-repeat scroll 16px 16px;*/
+      padding-left:45px;
+}
+
+#appt, #quantity, #DateOrdered , #flowers, #inputAddressLine1, #inputAddressLine2,#inputAddressLine3  {
+     /* background: rgba(105,105,105,105) url(http://luismruiz.com/img/gemicon_email.png) no-repeat scroll 16px 20px;*/
+      padding-left:45px;
+      
+}
+
+
+
+::-webkit-input-placeholder {
+    color: black;
+}
+
+
+:-moz-placeholder{ 
+    color: black; 
+}
+
+::-moz-placeholder {
+    color: black;
+}
+
+:-ms-input-placeholder {  
+    color: black; 
+}
+
+input:focus, textarea:focus, select:focus { 
+   /* background-color: rgba(105, 105,105, 105);*/
+    -moz-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    -webkit-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    overflow: hidden; 
+      color:black;
+}
+
+/*Styles submit button on contact form*/
+
+.btn {
+    width: 138px;
+    height: 44px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    float:right;
+    border: 1px solid #253737;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6da5a3), to(#416b68));
+    background: -webkit-linear-gradient(top, #6da5a3, #416b68);
+    background: -moz-linear-gradient(top, #6da5a3, #416b68);
+    background: -ms-linear-gradient(top, #6da5a3, #416b68);
+    background: -o-linear-gradient(top, #6da5a3, #416b68);
+    background-image: -ms-linear-gradient(top, #6da5a3 0%, #416b68 100%);
+    padding: 10.5px 21px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    text-shadow: #333333 0 1px 0;
+/*    color: #e1e1e1;*/
+    color:black;
+    text-align: center;
+}
+
+.btn:hover {
+    border: 1px solid #253737;
+    text-shadow: #333333 0 1px 0;
+    background: #416b68;
+    background: -webkit-gradient(linear, left top, left bottom, from(#77b2b0), to(#416b68));
+    background: -webkit-linear-gradient(top, #77b2b0, #416b68);
+    background: -moz-linear-gradient(top, #77b2b0, #416b68);
+    background: -ms-linear-gradient(top, #77b2b0, #416b68);
+    background: -o-linear-gradient(top, #77b2b0, #416b68);
+    background-image: -ms-linear-gradient(top, #77b2b0 0%, #416b68 100%);
+    color: red;
+    cursor: pointer;
+ }
+
+.btn:active {
+    margin-top:1px;
+    text-shadow: #333333 0 -1px 0;
+    border: 1px solid #253737;
+    background: #6da5a3;
+    background: -webkit-gradient(linear, left top, left bottom, from(#416b68), to(#416b68));
+    background: -webkit-linear-gradient(top, #416b68, #609391);
+    background: -moz-linear-gradient(top, #416b68, #6da5a3);
+    background: -ms-linear-gradient(top, #416b68, #6da5a3);
+    background: -o-linear-gradient(top, #416b68, #6da5a3);
+    background-image: -ms-linear-gradient(top, #416b68 0%, #6da5a3 100%);
+    color: #fff;
+    -webkit-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    cursor: wait;
+   }
+
+/*responsible for shadow in header text on order and contact forms*/
+.formheading { 
+        margin: 50px auto; 
+        text-align: center; 
+        color: maroon; 
+        font-size: 2em; 
+        transition: 0.5s; 
+        font-family: Arial, Helvetica, sans-serif; 
+    } 
+  
+    /* .formheading { 
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 
+                     0 3px 0 #ccc, 0 4px 0 #ccc, 
+                     0 5px 0 #ccc, 0 6px 0 #ccc, 
+                     0 7px 0 #ccc, 0 8px 0 #ccc, 
+                     0 9px 0 #ccc, 0 10px 0 #ccc, 
+                     0 11px 0 #ccc, 0 12px 0 #ccc, 
+                     0 20px 30px rgba(0, 0, 0, 0.5); 
+              } */
+
+
+    /*End of Css styles for order, contact form and form heading*/
+/*
+
+
+Start of css gallery 
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+/*:root {*/
+  /* Base font size */
+  /*font-size: 10px;*/
+/*}*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: white;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+.heading {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 4rem;
+  /* font-weight: 500; */
+  line-height: 1.5;
+  text-align: center;
+  padding: 3.5rem 0;
+  color: black;
+  font-kerning: normal;
+}
+
+.heading span {
+  display: block;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  /* Compensate for excess margin on outer gallery flex items */
+  margin: -1rem -1rem;
+}
+
+.gallery-item {
+  /* Minimum width of 24rem and grow to fit available space */
+  flex: 1 0 24rem;
+  /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+
+
+
+
+
+@supports (display: grid) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2rem;
+  }
+
+  .gallery,
+  .gallery-item {
+    margin: 0;
+  }
+}
+
+.bottom-left p 
+
+{
+  z-index: 100;
+  position: relative;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  margin:auto;
+  text-align:center;
+}
+/*
+End of css gallery*/
+
+
+/*Start of styling for delivery terms*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/*Styles delivery terms page*/
+
+* { box-sizing: border-box; }
+
+body { 
+  /*font-family: 'Open Sans', sans-serif;*/
+  color: #000000;
+}
+
+h1
+{
+  color:white;
+}
+
+
+/*p{
+
+  font-size: 14px;
+}
+*/
+/* STRUCTURE */
+
+.wrapper {
+  padding: 5px;
+  max-width: 960px;
+  width: 95%;
+  margin: 20px auto;
+}
+header {
+  padding: 0 15px;
+}
+
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.column {
+  flex: 1;
+  border: 1px solid gray;
+  margin: 2px;
+  padding: 10px;
+  &:first-child { margin-left: 0; }
+  &:last-child { margin-right: 0; }
+  
+}
+
+footer {
+  padding: 0 15px;
+}
+
+
+@media screen and (max-width: 980px) {
+  .columns .column {
+    margin-bottom: 5px;
+    flex-basis: 40%;
+    &:nth-last-child(2) {
+      margin-right: 0;
+    }
+    &:last-child {
+      flex-basis: 100%;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .columns .column {
+    flex-basis: 100%;
+    margin: 0 0 5px 0;
+  }
+}
+
+/*Styles main heading on delivery page and puts square bullets on list*/
+
+h1{
+
+  text-align:center;
+
+}
+
+ul
+{
+
+ list-style: square inside;
+ font-size:14px;
+
+
+}
+
+.Delivery, .Delivery2 {
+
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ line-height: 1.5;
+ text-align: justify;
+ text-justify: inter-word;
+ font-weight:bold;
+}
+
+h5
+{
+
+  font-size: 14px;
+}
+
+.Delivery3 {
+
+  font-size: 25px;
+}
+
+/*End of styling for delivey terms*/
+
+/* just some  styling*/
+body { 
+  text-align: center; 
+
+}
+
+
+
+/* heart div class - in html i used just a simple html simbol entity for heart sign, you can use text or whatever u want*/
+
+
+/*Starting of css styling for Valentines shiny starts here gives the color and shiny effect to the phrase Happy Valentine's day*/
+.shiny
+{
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-family: "Lucida Handwriting";
+  font-size: 5em;
+  font-weight: 900;
+  position: relative;
+
+  
+}
+
+.shiny::before
+{
+  text-align: center;
+  backgro
+  und-position: -180px;
+  -webkit-animation: flare 5s infinite;
+  -webkit-animation-timing-function: linear;
+  background-image: linear-gradient(65deg, transparent 20%, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.3) 27%, transparent 27%, transparent 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  content: "Happy Valentine's Day";
+  color: #FFF;
+  display: block;
+  padding-right: 140px;
+  position: absolute;
+}
+
+.shiny::after
+{
+  text-align:center;
+  content: "Happy Valentine's Day";
+  color: #FFF;
+  display: block;
+  position: absolute;
+  text-shadow: 0 1px #6E4414, 0 2px #6E4414, 0 3px #6E4414, 0 4px #6E4414, 0 5px #6E4414, 0 6px #6E4414, 0 7px #6E4414, 0 8px #6E4414, 0 9px #6E4414, 0 10px #6E4414;
+  top: 0;
+  z-index: -1;
+}
+
+.inner-shiny::after, .inner-shiny::before
+{
+    -webkit-animation: sparkle 5s infinite;
+  -webkit-animation-timing-function: linear;
+  background: #FFF;
+  border-radius: 100%;
+  box-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #FFF, 0 0 25px #FFF, 0 0 30px #FFF, 0 0 35px #FFF;
+  content: "";
+  display: block;
+  height: 10px;
+  opacity: 0.7;
+  position: absolute;
+  width: 10px;
+}
+
+.inner-shiny::before
+{
+  -webkit-animation-delay: 0.2s;
+  height: 7px;
+  left: 0.12em;
+  top: 0.8em;
+  width: 7px;
+}
+
+.inner-shiny::after
+{
+  top: 0.32em;
+  right: -5px;
+}
+
+.imageby {
+ text-align: center;
+ color:white;
+ font-size: 20px;
+ font-weight: bold;
+
+
+}
+
+@-webkit-keyframes flare
+{
+  0%   { background-position: -180px; }
+  30%  { background-position: 500px; }
+  100% { background-position: 500px; }
+}
+
+@-webkit-keyframes sparkle
+{
+  0%   { opacity: 0; }
+  30%  { opacity: 0; }
+  40%  { opacity: 0.8; }
+  60%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/*Ending of css styling for Valentines shiny starts here gives the color and shiny effect to the phrase Happy Valentine's day*/
+
+audio {
+ background-color: maroon;
+  width: 300px; 
+  box-shadow: 10px 10px 20px;
+  border-radius: 50px;
+/*  transform: scale(1.05);*/
+}
+
+.playmusic {
+  color:white;
+  font-weight:bolder;
+}
+
+/*Styling for blockquote*/
+blockquote{
+  display:block;
+  background: maroon;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+  
+  /*Borders - (Optional)*/
+  border-left: 15px solid white;
+ 
+  
+  /*Box Shadow - (Optional)*/
+  /*-moz-box-shadow: 2px 2px 15px lightpink;
+  -webkit-box-shadow: 2px 2px 15px #lightpink;
+  box-shadow: 2px 2px 15px #lightpink;*/
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  
+  /*/*Positioning*/
+  position: relative;
+  left: 10px;
+  top:5px;*/
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "\201D"; /*Unicode for Right Double Quote*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+
+/*/*Positioning*/
+  position: absolute;
+
+  }
+
+blockquote a{
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c;
+}
+
+blockquote a:hover{
+ color: #666;
+}
+
+blockquote em{
+  font-style: italic;
+}
+
+blockquote {
+  text-align: center;
+  color:#fff;
+  font-weight: bolder;
+  font-size: 20px
+  
+}
+
+
+
+/*styling for tool tips*/
+ 
+?
+  /*background: ;*/
+?
+
+/* the animations */
+/* fade */
+
+
+/* swing */
+?
+/* basic styling: has nothing to do with tooltips: */
+/*h1 {
+  padding-left: 50px;
+}
+ul {
+  margin-bottom: 40px;
+}
+li {
+  cursor: pointer; 
+  display: inline-block; 
+  padding: 0 10px;
+}
+*/
+
+/*OTHER TOOLTIP SECTION*/
+
+::selection {
+ /* background: #1FDA9A;*/
+/* color: #fff;*/
+}
+
+/*body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  font-weight: 700;
+  background-color: #28ABE3;
+  color: #fff;
+}*/
+.container {
+  margin:36px auto;
+  /*background: radial-gradient(circle farthest-corner at 400px 250px , #64BBE0 0%, #28ABE3, #28ABE3 95%);*/
+}
+.container .heading {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+.tooltip-wrapper {
+  padding: 160px 0;
+  text-align: center;
+}
+.tooltip-wrapper li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+.tooltip-wrapper li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/**
+ * Tooltips
+ */
+
+.tooltip {
+  position: relative;
+}
+.tooltip:after {
+  overflow:hidden;
+  position: absolute;
+  padding: 8px;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  background-color: maroon;
+  font-size: .9em;
+  font-weight: bold;
+  color: #fff;
+  content: attr(data-tooltip);
+  min-width: 80px;
+  // width: -moz-max-content;
+  // width: -webkit-max-content;
+  opacity: 0;
+  transition: all .2s ease-in-out .25s;
+  visibility: hidden;
+  z-index: 2;
+}
+.tooltip:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*Tooltip starting positions*/
+
+.tooltip-bottom:after {
+  top: 155%;
+  left: 0;
+}
+.tooltip-left:after {
+  right: 130%;
+  min-width: 100px;
+}
+.tooltip-right:after {
+  left: 130%;
+  min-width: 100px;
+}
+
+/*Tooltip final positions*/
+
+
+.tooltip-bottom:hover:after {
+  top: 125%;
+}
+
+
+
+
+/**
+ * Triangles
+ */
+
+.tooltip-top:before,
+.tooltip-bottom:before,
+.tooltip-left:before,
+.tooltip-right:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-width: 7px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+  transition: all .2s ease-in-out .25s;
+  visibility: hidden;
+}
+.tooltip-top:hover:before,
+.tooltip-bottom:hover:before,
+.tooltip-left:hover:before,
+.tooltip-right:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*Triangle starter positions*/
+
+.tooltip-top:before {
+  top: -51%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-color: #fff;
+}
+.tooltip-bottom:before {
+  bottom: -56%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-color: #fff;
+}
+.tooltip-left:before {
+  left: -31%;
+  top: 15%;
+  border-left-color: #fff;
+}
+.tooltip-right:before {
+  right: -31%;
+  top: 15%;
+  border-right-color: #fff;
+}
+
+/* Triangle final positions */
+
+.tooltip-top:hover:before {
+  top: -21%;
+}
+.tooltip-bottom:hover:before {
+  bottom: -26%;
+}
+.tooltip-left:hover:before {
+  left: -11%;
+}
+.tooltip-right:hover:before {
+  right: -11%;
+}
+
+
+
+
+/* Section with links */
+
+
+
+/* css carousel for image slider */
+
+/*
+  Thanks for stopping by! =) 
+  – sxoxm
+*/
+:root {
+  /* change to increase or decrease time */
+  --time: 15s;
+
+  /* change Height of slider */
+  --height: 78vh;
+}
+@keyframes doslide {
+  0% {
+    margin-left: 0;
+  }
+  30% {
+    margin-left: 0;
+  }
+  33% {
+    margin-left: -100%;
+  }
+  63% {
+    margin-left: -100%;
+  }
+  66% {
+    margin-left: -200%;
+  }
+  97% {
+    margin-left: -200%;
+  }
+}
+@keyframes cooldown {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* body {
+  background-color: #000;
+  color: #fff;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  max-width: 80vw;
+  margin: auto;
+} */
+h1 {
+  font-weight: 100;
+
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 25px 15px;
+}
+p {
+  text-align: center;
+}
+p small {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.slider {
+  overflow: hidden;
+  width: 100%;
+  height: var(--height);
+  background-color: #333;
+  
+}
+.innerslide {
+  width: 300%;
+  height: var(--height);
+  animation: doslide var(--time) infinite ease;
+}
+.slider:hover .innerslide,
+.slider:hover .indicator {
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}
+.slider:hover .slide {
+  opacity: 0.8;
+}
+.slider:hover .indicator {
+  opacity: 0.5;
+  height: 5px;
+  margin-top: -5px;
+}
+.slide {
+  width: calc(100% / 3);
+  height: var(--height);
+  float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.8s ease all;
+  background-color: rgb(220, 13, 13);
+}
+.slide:nth-child(odd) {
+  background-color: rgb(220, 13, 13);
+}
+.slide:nth-child(even) {
+  background-color: rgb(220, 13, 13);
+}
+
+.indicator {
+  width: 100%;
+  position: relative;
+  height: 10px;
+  margin-top: -10px;
+  background-color: white;
+  animation: cooldown var(--time) linear infinite;
+  transition: 0.8s ease all;
+}
+
+.slide.s1 {
+  
+  
+  background-image: url("../img/img1.webp");
+  background-size: contain;
+  background-color : #A24857;
+
+}
+.slide.s2 {
+ 
+  
+  background-image: url("../img/img2.webp");
+  background-size: contain;
+  background-color:#A24857;
+
+  
+}
+
+.slide.s3 {
+ 
+  
+  background-image: url("../img/img3.webp");
+  background-size: contain;
+  background-color:#A24857;
+
+}
+ 
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
+.gotopbtn
+{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: maroon;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+  font-size: 32px;
+}
+
+
+/* end of carousel */
+
+
